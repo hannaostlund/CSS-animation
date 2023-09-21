@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Invitation to Mabon</title>
+</head>
+
+<div class="wrapper">
+    <header>
+        <h1>Invitation to celebrate Mabon</h1>
+    </header>
+</div>
+
+    <body>
+    <!--content -->
+    <div class= "container-card">
+        <h2>This is your exclusive invitation to our annually celebration of Mabon</h2>
+            <p>Mark your calendar for September 23 and start making plans to celebrate Mabon. Together we will celebrate the the autumnal equinox with a harvest. Bring your best witch hat and broom, cat is optional. </p>
+        
+        <!--
+        <div class="image-container">
+            <img src="images/carrots.jpg" alt="carrot harvest mabon">  
+        </div>  Image-->    
+        
+        <!--Form -->
+        <form class="form" autocomplete="off">
+
+            <!--Form fields-->
+            <label for="name" class="label">Your Name</label>
+            <input type="text" id="name" name="name" class="input" required>
+        
+            <!--Select list Y/N-->
+            <label for="animals">Dare to attend?</label>
+            <div class="select-container">
+                <select id="animals" name="animallist" form="animalform">
+                    <option value="volvo">Yes</option>
+                    <option value="saab">No</option>
+                    <option value="opel">Ma-what?</option>
+                </select>
+            </div>
+
+            <!--Checkbox-->
+            <label for="c1">Bringing a cat?</label>
+            <input type="checkbox" name="c1" id="c1">
+            
+            <!--Form button-->
+            <div class="btn-container">
+            <button type="submit" class="btn">Attend</button>
+        </form>
+    </div>
+   
+   
+</body>
+</html>
+
