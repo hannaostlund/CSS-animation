@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <title>Invitation to Mabon</title>
@@ -15,44 +18,43 @@
 </div>
 
     <body>
-    <!--content -->
+    <!--Invitation card-->
     <div class= "container-card">
         <h2>This is your exclusive invitation to our annually celebration of Mabon</h2>
-            <p>Mark your calendar for September 23 and start making plans to celebrate Mabon. Together we will celebrate the the autumnal equinox with a harvest. Bring your best witch hat and broom, cat is optional. </p>
-        
-        <!--
-        <div class="image-container">
-            <img src="images/carrots.jpg" alt="carrot harvest mabon">  
-        </div>  Image-->    
-        
-        <!--Form -->
-        <form class="form" autocomplete="off">
 
-            <!--Form fields-->
-            <label for="name" class="label">Your Name</label>
-            <input type="text" id="name" name="name" class="input" required>
-        
-            <!--Select list Y/N-->
-            <label for="animals">Dare to attend?</label>
-            <div class="select-container">
-                <select id="animals" name="animallist" form="animalform">
-                    <option value="volvo">Yes</option>
-                    <option value="saab">No</option>
-                    <option value="opel">Ma-what?</option>
-                </select>
-            </div>
+        <img src="images/harvest.jpg" alt="harvest" class="harvest-img">
+
+        <p>Mark your calendar for September 23 and start making plans to celebrate Mabon. Together we will celebrate the the autumnal equinox with a harvest. Bring your best witch hat and broom, cat is optional. </p>
+                
+            <form class="form" autocomplete="off">   
+                <!--Form-->
+                <div class="form-field">
+                    <label for="name" class="label">Your Name</label>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="name" name="name" class="input" required>
+                </div>
+
+                <!--Select list Y/N-->
+                <div class="attend-container">
+                    <label for="attend">Dare to attend?</label>
+                    <div class="select-container">
+                        <select id="attendselect" name="attendlist" form="attendform">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                            <option value="mawhat">Ma-what?</option>
+                        </select>
+                    </div>
+                </div>
 
             <!--Checkbox-->
             <label for="c1">Bringing a cat?</label>
-            <input type="checkbox" name="c1" id="c1">
+                <input type="checkbox" name="c1" id="c1">
             
             <!--Form button-->
             <div class="btn-container">
-            <button type="submit" class="btn">Attend</button>
-        </form>
+                <button type="submit" class="btn">Attend</button>
     </div>
-   
-   
 </body>
 </html>
 
